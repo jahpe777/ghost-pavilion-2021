@@ -1,5 +1,9 @@
-section {
-  padding: 50px;
+.black-and-blue {
+  margin-bottom: 40px;
+}
+
+.vacant-stories {
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 415px) {

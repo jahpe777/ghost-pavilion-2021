@@ -10,12 +10,6 @@ section.navbar {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 767px) {
-  section.navbar {
-    flex-direction: column;
-  }
-}
-
 .navlinks {
   list-style: none;
   padding: 0px;
@@ -29,6 +23,17 @@ section.navbar {
   padding: 20px;
 }
 
+a {
+  color: red;
+}
+
 a:hover {
-  color: #b3fcc4;
+  /* color: #b3fcc4; */
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  section.navbar {
+    flex-direction: column;
+  }
 }

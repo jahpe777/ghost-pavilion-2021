@@ -1,5 +1,5 @@
 .footer {
-  padding: 10px;
+  padding: 20px;
 }
 
 .links {
@@ -9,12 +9,12 @@
 
 .links li {
   display: inline;
-  padding: 10px;
+  padding: 20px;
 }
 
 .icons {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   opacity: 0.5;
 }
 

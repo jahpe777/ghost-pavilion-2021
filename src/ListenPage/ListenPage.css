@@ -1,7 +1,12 @@
 .listenpage {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bandcamp-embeds {
+  margin: 0 70px;
 }
 
 iframe {

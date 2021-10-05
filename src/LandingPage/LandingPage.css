@@ -14,9 +14,20 @@ img {
 }
 
 img:hover {
-  -moz-box-shadow: 0 0 300px #b3fcc4;
-  -webkit-box-shadow: 0 0 300px #b3fcc4;
-  box-shadow: 0 0 300px #b3fcc4;
+  -moz-box-shadow: 0 0 1000px red;
+  -webkit-box-shadow: 0 0 1000px red;
+  box-shadow: 0 0 1000px red;
+}
+
+.landingpage-video {
+  position: absolute;
+  width: '100%';
+  height: '100%';
+  left: 50%;
+  top: 50%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 @media screen and (max-width: 415px) {

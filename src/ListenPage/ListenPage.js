@@ -4,7 +4,7 @@ import './ListenPage.css';
 const ListenPage = () => {
   return (
     <div className="listenpage">
-      <section>
+      <section className="bandcamp-embeds">
         <iframe
           title="bleed-on-sunset"
           border="0"
@@ -18,7 +18,21 @@ const ListenPage = () => {
           </a>
         </iframe>
       </section>
-      <section>
+      <section className="bandcamp-embeds">
+        <iframe
+          title="bleed-on-sunset"
+          border="0"
+          width="350px"
+          height="442px"
+          src="https://bandcamp.com/EmbeddedPlayer/track=77723839/size=large/bgcol=333333/linkcol=0f91ff/tracklist=false/transparent=true/"
+          seamless
+        >
+          <a href="http://ghostpavilion.bandcamp.com/track/bleed-on-sunset">
+            Bleed on Sunset by Ghost Pavilion
+          </a>
+        </iframe>
+      </section>
+      <section className="bandcamp-embeds">
         <iframe
           title="oblivion"
           border="0"
@@ -32,7 +46,7 @@ const ListenPage = () => {
           </a>
         </iframe>
       </section>
-      <section>
+      <section className="bandcamp-embeds">
         <iframe
           title="traces"
           border="0"

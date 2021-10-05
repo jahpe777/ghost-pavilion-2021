@@ -1,5 +1,14 @@
 import React from 'react';
 import './Footer.css';
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaYoutube,
+  FaSoundcloud,
+  FaBandcamp,
+  FaEnvelope,
+} from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -11,7 +20,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             href="https://www.facebook.com/GhostPavilion"
           >
-            <img className="icons" alt="facebook" src="images/facebook.png" />
+            <FaFacebookF className="icons" alt="facebook" />
           </a>
         </li>
         <li>
@@ -20,7 +29,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             href="https://www.twitter.com/ghost_pavilion"
           >
-            <img className="icons" alt="twitter" src="images/twitter.png" />
+            <FaTwitter className="icons" alt="twitter" />
           </a>
         </li>
         <li>
@@ -29,7 +38,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             href="https://www.instagram.com/ghost_pavilion"
           >
-            <img className="icons" alt="instagram" src="images/instagram.png" />
+            <FaInstagram className="icons" alt="instagram" />
           </a>
         </li>
         <li>
@@ -38,7 +47,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             href="https://www.youtube.com/channel/UCr56a0HjTtBCzkTu1rgRQWg"
           >
-            <img className="icons" alt="youtube" src="images/youtube.png" />
+            <FaYoutube className="icons" alt="youtube" />
           </a>
         </li>
         <li>
@@ -47,11 +56,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             href="https://soundcloud.com/ghost-pavilion"
           >
-            <img
-              className="icons"
-              alt="soundcloud"
-              src="images/soundcloud.png"
-            />
+            <FaSoundcloud className="icons" alt="soundcloud" />
           </a>
         </li>
         <li>
@@ -60,7 +65,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             href="https://ghostpavilion.bandcamp.com/"
           >
-            <img className="icons" alt="bandcamp" src="images/bandcamp.png" />
+            <FaBandcamp className="icons" alt="bandcamp" />
           </a>
         </li>
         <li>
@@ -69,7 +74,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             href="mailto:info@ghostpavilion.com"
           >
-            <img className="icons" alt="email" src="images/email.png" />
+            <FaEnvelope className="icons" alt="email" />
           </a>
         </li>
       </ul>

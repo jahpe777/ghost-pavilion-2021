@@ -24,28 +24,24 @@ const App = () => {
 
   const addNewShow = async (show) => {
     try {
-      const res = await axios.post(`${config.API_ENDPOINT}/api/shows`),
-        {
-          body: { show },
-        };
+      const res = await axios.post(`${config.API_ENDPOINT}/api/shows`, {
+        body: { show },
+      });
       setShows([...shows, res]);
     } catch (error) {
       console.log(error);
     }
-    addNewShow();
   };
 
   const addNewSubscriber = async (email) => {
     try {
-      const res = await axios.post(`${config.API_ENDPOINT}/api/emails`),
-        {
-          body: { email },
-        };
+      const res = await axios.post(`${config.API_ENDPOINT}/api/emails`, {
+        body: { email },
+      });
       setShows([...subscribers, res]);
     } catch (error) {
       console.log(error);
     }
-    addNewSubscriber();
   };
 
   useEffect(() => {
@@ -61,7 +57,16 @@ const App = () => {
   }, []);
 
   return (
-    <BandContext.Provider value={(shows, subscribers)}>
+    <BandContext.Provider
+      value={
+        (shows,
+        setShows,
+        subscribers,
+        setSubscribers,
+        addNewShow,
+        addNewSubscriber)
+      }
+    >
       <div className="App">
         <header className="App-Header">
           <Route path="/" component={NavBar} />
